@@ -158,12 +158,11 @@ const payouts96 = [
 
 var app = new Vue({
   el: '#app',
-  data: {
-    /** inputs */
-    client_seed: qs.c || '',
-    server_seed: qs.s || '',
+  data:
+    client_seed: qs.c || '69505769',
+    server_seed: qs.s || 'PGSOFT.COM',
     server_seed_hash: qs.h || '',
-    nonce: parseInt(qs.n) || 0,
+    nonce: parseInt(qs.n) || 200,
     risk: qs.r || 'Low',
     segments: qs.t || 10,
     version: qs.version || 1,
